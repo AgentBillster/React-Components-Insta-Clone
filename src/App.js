@@ -19,10 +19,10 @@ const App = () => {
   const [data] = useState(dummyData)
   return (
     <div className="App">
-      
-      <SearchBar/>
-      <PostsPage dummyData={data}/>
+      <SearchBar/>  
+      <PostsPage data={data}/> {/* passing data into postspage as props*/}
     </div>
+    
   );
 };
 
